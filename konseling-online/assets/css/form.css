@@ -1,0 +1,562 @@
+*{
+
+margin:0;
+
+padding:0;
+
+box-sizing:border-box;
+
+}
+
+
+
+/* ======================
+CONTENT
+====================== */
+
+.content{
+
+padding:40px;
+
+}
+
+
+
+/* ======================
+FORM
+====================== */
+
+.form-box{
+
+background:white;
+
+padding:35px;
+
+border-radius:15px;
+
+max-width:700px;
+
+box-shadow:
+0 4px 14px
+rgba(0,0,0,.06);
+
+}
+
+
+.form-box input,
+.form-box textarea,
+.form-box select,
+.form-box button{
+
+width:100%;
+
+padding:14px;
+
+margin-top:15px;
+
+border-radius:10px;
+
+font-size:15px;
+
+}
+
+
+.form-box input,
+.form-box textarea,
+.form-box select{
+
+border:1px solid #DADADA;
+
+}
+
+
+.form-box textarea{
+
+min-height:120px;
+
+resize:vertical;
+
+}
+
+
+.form-box button{
+
+border:none;
+
+background:#1565C0;
+
+color:white;
+
+cursor:pointer;
+
+}
+
+
+.form-box button:hover{
+
+background:#0D47A1;
+
+}
+
+
+
+/* ======================
+TABLE
+====================== */
+
+.table-wrapper{
+
+width:100%;
+
+overflow-x:auto;
+
+}
+
+
+.table{
+
+width:100%;
+
+min-width:1000px;
+
+border-collapse:collapse;
+
+background:white;
+
+border-radius:12px;
+
+overflow:hidden;
+
+}
+
+
+.table th{
+
+background:#1565C0;
+
+color:white;
+
+text-align:left;
+
+padding:15px;
+
+}
+
+
+.table td{
+
+padding:15px;
+
+border-bottom:1px solid #ECECEC;
+
+vertical-align:top;
+
+word-break:break-word;
+
+}
+
+
+.table tr:hover{
+
+background:#FAFAFA;
+
+}
+
+
+.table form{
+
+display:flex;
+
+flex-direction:column;
+
+gap:10px;
+
+}
+
+
+.table textarea{
+
+width:220px;
+
+height:90px;
+
+padding:10px;
+
+margin:0;
+
+border:1px solid #ddd;
+
+border-radius:8px;
+
+}
+
+
+.table select{
+
+padding:10px;
+
+border-radius:8px;
+
+border:1px solid #ddd;
+
+}
+
+
+.table button{
+
+width:auto;
+
+padding:10px 16px;
+
+border:none;
+
+background:#1565C0;
+
+color:white;
+
+border-radius:8px;
+
+cursor:pointer;
+
+}
+
+
+
+/* ======================
+KELUHAN
+====================== */
+
+.keluhan-box{
+
+width:350px;
+
+max-width:350px;
+
+padding:12px;
+
+background:#F5F7FA;
+
+border-radius:10px;
+
+line-height:1.6;
+
+white-space:pre-wrap;
+
+word-break:break-word;
+
+overflow:auto;
+
+}
+
+
+
+/* ======================
+STATUS
+====================== */
+
+.status{
+
+color:#1565C0;
+
+font-weight:bold;
+
+}
+
+
+
+/* ======================
+CARD
+====================== */
+
+.card{
+
+display:block;
+
+padding:20px;
+
+background:white;
+
+border-radius:12px;
+
+text-decoration:none;
+
+color:black;
+
+box-shadow:
+0 4px 12px
+rgba(0,0,0,.05);
+
+}
+
+
+.card:hover{
+
+transform:translateY(-2px);
+
+}
+
+
+
+/* ======================
+CHAT
+====================== */
+
+.chat-box{
+
+height:450px;
+
+background:white;
+
+padding:20px;
+
+border-radius:15px;
+
+overflow-y:auto;
+
+margin:20px 0;
+
+}
+
+
+.bubble{
+
+max-width:60%;
+
+padding:14px;
+
+margin-bottom:12px;
+
+border-radius:15px;
+
+word-break:break-word;
+
+}
+
+
+.me{
+
+margin-left:auto;
+
+background:#1565C0;
+
+color:white;
+
+}
+
+
+.other{
+
+background:#ECEFF1;
+
+}
+
+
+
+/* ======================
+RESPONSIVE
+====================== */
+
+@media(max-width:768px){
+
+.content{
+
+padding:20px;
+
+}
+
+
+.form-box{
+
+padding:25px;
+
+}
+
+
+.table{
+
+min-width:800px;
+
+}
+
+
+.keluhan-box{
+
+width:250px;
+
+}
+
+}
+
+/* ======================
+FIX AJUKAN KONSELING MOBILE
+====================== */
+
+@media screen and (max-width:768px){
+
+.content-ajukan{
+
+padding-top:90px !important;
+
+}
+
+
+.content-ajukan h1{
+
+margin-bottom:25px;
+
+}
+
+}
+
+/* ======================
+CHAT MODERN
+====================== */
+
+.chat-form{
+
+display:flex;
+
+align-items:center;
+
+gap:12px;
+
+margin-top:18px;
+
+background:white;
+
+padding:10px;
+
+border-radius:18px;
+
+box-shadow:
+0 8px 24px
+rgba(0,0,0,.08);
+
+}
+
+
+.chat-form input{
+
+flex:1;
+
+height:52px;
+
+padding:0 18px;
+
+border:none;
+
+outline:none;
+
+background:#F5F7FA;
+
+border-radius:14px;
+
+font-size:15px;
+
+margin:0;
+
+transition:.2s;
+
+}
+
+
+.chat-form input:focus{
+
+background:white;
+
+box-shadow:
+0 0 0 2px
+rgba(21,101,192,.15);
+
+}
+
+
+.chat-form button{
+
+width:56px;
+
+height:56px;
+
+margin:0;
+
+border:none;
+
+border-radius:16px;
+
+background:#1565C0;
+
+color:white;
+
+font-size:22px;
+
+cursor:pointer;
+
+transition:.2s;
+
+flex-shrink:0;
+
+}
+
+
+.chat-form button:hover{
+
+transform:scale(1.05);
+
+background:#0D47A1;
+
+}
+
+
+.chat-form button::before{
+
+content:"➤";
+
+}
+
+
+/* sembunyiin tulisan */
+
+.chat-form button{
+
+font-size:0;
+
+}
+
+
+.chat-form button::before{
+
+font-size:22px;
+
+}
+
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.chat-form{
+
+padding:8px;
+
+gap:8px;
+
+}
+
+
+.chat-form input{
+
+height:50px;
+
+}
+
+
+.chat-form button{
+
+width:52px;
+
+height:52px;
+
+}
+
+}
