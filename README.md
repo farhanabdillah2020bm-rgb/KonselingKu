@@ -40,8 +40,6 @@ konseling-online/
 ├── templates/
 ├── siswa/
 ├── guru/
-├── controllers/
-├── models/
 └── database/
 ```
 
